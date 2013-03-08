@@ -12,6 +12,10 @@ to Ember patterns, updated it to the latest development realease of Ember, and
 wrapped it in a build tool process to address a number of annoyances with
 building browser applications.
 
+### Other examples
+
+* [ember-brunch](https://github.com/cbosco/ember-brunch/tree/todomvc) - An Ember.js [brunch](http://brunch.io) skeleton with [mocha-phantomjs](http://metaskills.net/mocha-phantomjs/) tests
+
 ## The files in this project
 
 ### .gitignore
