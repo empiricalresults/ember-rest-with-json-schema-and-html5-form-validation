@@ -91,7 +91,7 @@ module.exports = function(grunt) {
           return sourceFile.replace(/app\/templates\//, '');
         }
       },
-      'dependencies/compiled/templates.js': ["app/templates/*.hbs"]
+      'dependencies/compiled/templates.js': ["app/templates/**/*.hbs"]
     },
 
     /*
