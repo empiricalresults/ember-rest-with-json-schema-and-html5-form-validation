@@ -11,21 +11,6 @@
 */
 
 /*
- * These are the dependencies for an Ember application
- * and they have to be loaded before any application code.
-*/
-
-/*
- * Since we're precompiling our templates, we only need the
- * handlebars-runtime microlib instead of the
- * entire handlebars library and its string parsing functions.
-*/
-require('dependencies/handlebars-runtime');
-
-/* This is Ember. I think you'll like it */
-require('dependencies/ember');
-
-/*
   this file is generated as part of the build process.
   If you haven't run that yet, you won't see it.
 
@@ -39,47 +24,24 @@ require('dependencies/compiled/templates');
   specifies what HTML element inside index.html Ember
   should manage for you.
 */
-window.Todos = Ember.Application.create({
-  rootElement: window.TESTING ? '#qunit-fixture' : '#todoapp'
+
+window.App = Ember.Application.create({
+  LOG_TRANSITIONS: true,
+  rootElement: window.TESTING ? '#qunit-fixture' : '#demo-app'
 });
 
 if (window.TESTING) {
-  window.Todos.deferReadiness();
+  window.App.deferReadiness();
 }
 
-/* 
- * Model layer. 
- * Ember.Object itself provides most of what
- * model layers elsewhere provide. Since TodoMVC
- * doesn't communicate with a server, plain
- * Ember.Objects will do.
-*/
-require('app/models/todo');
-
-/*
- * Views layer.
- * You'll notice that there are only a few views.
- * Ember accomplishes a lot in its templates and 
- * Views are only necessary if you have view-specific
- * programming to do. 
-*/
-require('app/views/edit_todo_textfield');
-require('app/views/create_todo_textfield');
-
-/*
- * Controller layer.
- * Controllers wrap objects and provide a place
- * to implement properties for display
- * whose value is computed from the content of the
- * controllers wrapped objects.
-*/
-require('app/controllers/todos_controller');
-require('app/controllers/filtered_todos_controller');
-
-/* 
- * States (i.e. Routes)
- * Handles serialization of the application's current state
- * which results in view hierarchy updates. Responds to
- * actions.
-*/
+require('app/ember-bootstrap/main');
+require('app/settings');
+require('app/plugins');
+require('app/lib/rest');
+require('app/models/schema');
+require('app/models/formtext');
+require('app/models/profile');
+require('app/controllers/profile');
+require('app/routes/router');
+require('app/models/mock');
 require('app/routes/router');

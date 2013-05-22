@@ -3,23 +3,32 @@
 <head>
   <meta charset="utf-8">
   <title>QUnit basic example</title>
-  <link rel="stylesheet" href="support/qunit.css">
+  <link rel="stylesheet" href="support/qunit-1.11.0.css">
 </head>
 <body>
   <div id="qunit"></div>
   <div id="qunit-fixture"></div>
-
-  <script type="text/javascript" src="support/qunit.js"></script>
+  <script type="text/javascript" src="../build/vendor/tv4.js"></script>
+  <script type="text/javascript" src="support/qunit-1.11.0.js"></script>
   <script type="text/javascript" src="support/sinon.js"></script>
   <script type="text/javascript">
     TESTING = true;  
   </script>
-  <script src="../build/application.js"></script>
+  <script type="text/javascript" src="../build/vendor/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="../build/vendor/jquery.mockjax.js"></script>
+  <script type="text/javascript" src="../build/vendor/moment.min.js"></script>
+  <script type="text/javascript" src="../build/vendor/underscore.js"></script>
+  <script type="text/javascript" src="../build/vendor/underscore.string.min.js"></script>
+  <script type="text/javascript" src="../build/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../build/vendor/handlebars.min.js"></script>
+  <script type="text/javascript">Handlebars.COMPILER_REVISION = 2; // temporary HACK until ember supports the new handlebar</script>
+  <script type="text/javascript" src="../build/vendor/ember-1.0.0-rc.3.js"></script>
+  <script type="text/javascript">Handlebars.COMPILER_REVISION = 3; // temporary HACK until ember supports the new handlebar</script>
+  <script type="text/javascript" src="../build/application.js"></script>
 
   <% _.each(files, function(filepath) { %>
   <script type="text/javascript" src="<%= filepath %>"></script>
   <% }); %>
 
-  </script>
 </body>
 </html>

@@ -41,16 +41,18 @@
   <!--[if lt IE 7]>
   <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
-  <section id="todoapp"></section>
+  <section id="demo-app"></section>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
-  <script>window._ || document.write('<script type="text/javascript" src="vendor/underscore.js"><\/script>')</script>
+  <script type="text/javascript">window._ || document.write('<script type="text/javascript" src="vendor/underscore.js"><\/script>')</script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.0/underscore.string.min.js"></script>
-  <script>window._.str || document.write('<script type="text/javascript" src="vendor/underscore.string.min.js"><\/script>')</script>
+  <script type="text/javascript">window._.str || document.write('<script type="text/javascript" src="vendor/underscore.string.min.js"><\/script>')</script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-  <script>typeof $().modal == 'function' || document.write('<script type="text/javascript" src="vendor/bootstrap.min.js"><\/script>')</script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
-  <script>window.handlebars || document.write('<script type="text/javascript" src="vendor/handlebars-runtime.js"><\/script>')</script>
+  <script type="text/javascript">typeof $().modal == 'function' || document.write('<script type="text/javascript" src="vendor/bootstrap.min.js"><\/script>')</script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.4/handlebars.min.js"></script>
+  <script type="text/javascript">window.handlebars || document.write('<script type="text/javascript" src="vendor/handlebars.min.js"><\/script>')</script>
+  <script type="text/javascript">Handlebars.COMPILER_REVISION = 2; // temporary HACK until ember supports the new handlebar</script>
   <script type="text/javascript" src="vendor/ember-1.0.0-rc.3.js"></script>
+  <script type="text/javascript">Handlebars.COMPILER_REVISION = 3; // temporary HACK until ember supports the new handlebar</script>
   <script type="text/javascript" src="vendor/jquery.mockjax.js"></script>
   <script type="text/javascript" src="vendor/tv4.min.js"></script>
   <script type="text/javascript" src="application.js"></script>

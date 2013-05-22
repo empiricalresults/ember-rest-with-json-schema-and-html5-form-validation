@@ -1,5 +1,4 @@
 {
-  "camelcase": true,
   "indent": 2,
   "white": false,
   "curly": true,
@@ -13,13 +12,25 @@
   "boss": true,
   "eqnull": true,
   "browser": true,
+  "devel": true,
   "globals": {
     "test": true,
     "equal": true,
+    "notEqual": true,
     "ok": true,
+    "asyncTest": true,
+    "start": true,
+    "stop": true,
+    "expect": true,
+    "module": true,
     "sinon": true,
     "require": true,
     "Ember": true,
-    "Todos": true
+    "App": true,
+    "$": true,
+    "_": true,
+    "moment": true,
+    "QUnit": true,
+    "tv4": true
   }
 }

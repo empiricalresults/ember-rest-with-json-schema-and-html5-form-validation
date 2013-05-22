@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="span5">
+    <form class="personal-info form-horizontal ws-instantvalidation">
+      <fieldset>
+        {{view Bootstrap.Forms.TextField name="firstName" valueBinding="firstName" schemaBinding="schema" formtextBinding="formtext" }}
+        {{view Bootstrap.Forms.TextField name="lastName" valueBinding="lastName" schemaBinding="schema" formtextBinding="formtext" }}
+        {{view Bootstrap.Forms.TextField name="email" valueBinding="email" schemaBinding="schema" formtextBinding="formtext"  }}
+        {{view Bootstrap.Forms.TextField name="phone" valueBinding="phone" schemaBinding="schema" formtextBinding="formtext"  }}
+        {{view Bootstrap.Forms.TextField name="dateOfBirth" valueBinding="dateOfBirth" schemaBinding="schema" formtextBinding="formtext"  }}
+        {{view Bootstrap.Forms.TextField name="city" valueBinding="city" schemaBinding="schema" formtextBinding="formtext"  }}
+        <div class="control-group">
+          <div class="controls">
+            <a href="#save" {{ action save_edit }} class="btn btn-small btn-success">Save</a>
+            <a href="#cancel" {{ action cancel_edit }} class="btn btn-small btn-mini">Cancel</a>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
