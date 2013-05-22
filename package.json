@@ -1,7 +1,7 @@
 {
   "name": "todo-example",
   "version": "0.0.0",
-  "description": "'TodoMVC Ember example with buildtools and tests'",
+  "description": "'Ember example with json schema and html5 form validation and buildtools and tests'",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "grunt"

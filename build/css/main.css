@@ -1,0 +1,8 @@
+/* TODO: move these to SASS */
+
+input.user-error , textarea.user-error , select.user-error  {
+  border-color: #e9322d;
+  -webkit-box-shadow: 0 0 6px #f8b9b7;
+  -moz-box-shadow: 0 0 6px #f8b9b7;
+  box-shadow: 0 0 6px #f8b9b7;
+}
